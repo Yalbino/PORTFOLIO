@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid</title>
+	<style type="text/css">
+		.wrapper {
+			display: grid;
+			grid-template-columns: 1fr 5fr 2fr;
+			grid-template-rows: 5fr 20fr 5fr;
+			grid-gap: 10px;
+			height: 720px;
+		}
+
+		header {
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+
+		footer {
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+        #areaA {
+  background-color: rgb(10, 88, 255);
+  grid-column-start: 1;
+			grid-column-end: 4;
+}
+
+#areaB {
+  background-color: rgb(4, 35, 173);
+  grid-column-start: 1;
+			grid-column-end: 4;
+}
+
+		.wrapper * {
+			background: rgb(14, 25, 122);
+            color: blanchedalmond;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 1px;
+			margin-right: 1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="items">NAV</header>
+		<nav class="items">HEADER</nav>
+		<div class="items contents">CONTENTS</div>
+		<br><div class="items">A</div></br>
+        <div class="items">B</div>
+     
+<footer class="items">FOOTER</footer>
+	</div>
+</body>
+</html>
